@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:gravity="center_vertical">
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/Preview"
+                android:transitionName="preview"
+                android:src="@drawable/nca_logo"
+                android:adjustViewBounds="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/relativeLayout">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="7dp"
+                android:layout_toStartOf="@+id/relativeLayout2"
+                android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Clash of Clans"
+                    android:id="@+id/titulo"
+                    android:textStyle="bold"
+                    android:textColor="#89790C"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Categoria"
+                    android:id="@+id/categoria"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Autor"
+                    android:id="@+id/autor"
+                    android:textColor="#89790C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/vermas"
+                    android:layout_toEndOf="@+id/categoriaplantilla"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/categoriaplantilla" />
+
+            </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/relativeLayout2"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="ver"
+                    android:id="@+id/estadoactual"
+                    android:textStyle="bold"
+                    android:textColor="#25720D"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/estado_icon"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:showDividers="middle"
+        android:padding="3dp"
+        android:shrinkColumns="0"
+        android:stretchColumns="0"
+        android:divider="#000000"
+        android:background="@drawable/shadow"
+        android:layout_margin="2dp"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:showDividers="beginning"
+            android:layout_marginBottom="3dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="4dp"
+                android:id="@+id/relative_imagen">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Preview"
+                    android:transitionName="preview"
+                    android:src="@drawable/nca_logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"/>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center"
+            android:showDividers="beginning"
+            android:layout_marginBottom="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pandora xzczxc \nlines"
+                    android:id="@+id/titulo"
+                    android:textStyle="bold"
+                    android:textColor="#89790C"
+                    android:textSize="15dp"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Categoria"
+                    android:id="@+id/categoria"
+                    android:textStyle="italic"
+                    android:textSize="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Autor"
+                    android:id="@+id/autor"
+                    android:textColor="#89790C"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10dp"/>
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyThemeNoActionbar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+
+    </style>
+
+    <style name="AppThemeCustomBar" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="actionBarSize">48dip</item>
+        <item name="android:actionBarSize">48dip</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="NoActionBar" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

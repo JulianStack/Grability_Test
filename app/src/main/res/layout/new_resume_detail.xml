@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:id="@+id/scroll">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:showDividers="middle"
+            android:padding="3dp"
+            android:shrinkColumns="0"
+            android:stretchColumns="0"
+            android:divider="#000000"
+            android:background="@drawable/shadow"
+            android:id="@+id/tableLayout">
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center"
+                android:showDividers="beginning"
+                android:layout_marginBottom="3dp"
+                android:background="#FFBF00">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+                </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center"
+                android:showDividers="beginning"
+                android:layout_marginBottom="3dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:id="@+id/relativeLayout">
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:id="@+id/Preview"
+                                android:transitionName="preview"
+                                android:src="@drawable/nca_logo"
+                                android:adjustViewBounds="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_toEndOf="@+id/relativeLayout"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="left"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Clash of Clans"
+                                        android:id="@+id/Titulo"
+                                        android:textStyle="bold"
+                                        android:textColor="#89790C"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Categoria"
+                                        android:id="@+id/Categoria"
+                                        android:textStyle="italic" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Autor"
+                                        android:id="@+id/Autor"
+                                        android:textColor="#89790C" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                </RelativeLayout>
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:showDividers="beginning"
+                android:layout_marginBottom="3dp">
+
+                <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Categoria"
+                        android:id="@+id/Desc"
+                        android:textStyle="italic"
+                        android:padding="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/scroll"
+        android:src="@drawable/close_icon"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/close_button"/>
+
+</RelativeLayout>
+

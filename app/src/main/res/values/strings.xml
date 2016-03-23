@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyTest</string>
+
+    <string name="openDrawer">ABIERTO</string>
+    <string name="closeDrawer">CERRADO</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
